@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Concept - Projetos</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="projetos.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="=ie-edge">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	</head>
+
+
+	<body>
+
+						<!-- Inicio do menu fixo -->
+		<header  class = "header">
+  			<a href="index.html" class="logo"><img src="img/logo3.png" ></a>
+			  <input class="menu-btn" type="checkbox" id="menu-btn" />
+			  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			  <ul class="menu" id="device">
+					<li><a href="index.html" class="a">Home</a></li>
+					<li><a href="sobre.html" class="a">Sobre nós</a></li>
+					<li><a href="projetos.html" class="a">Projetos</a></li>
+					<li><a href="agendamento.php" class="a">Agendamento</a></li>	  </ul>
+		</header>
+			<!-- Fim do menu fixo -->
+
+		    	
+                <!--ESPAÇO PARA O SLIDE-->
+            <div class="slider">
+            <div class="load"></div>
+            <div class= content>
+            <div class="principal">
+        
+        </div>
+    </div>
+</div>
+            <!--FIM DO SLIDE -->
+		
+		<main>
+			<div class="divisao-imagem">
+				<p class="texto-projetos">Apartamentos</p>
+				
+
+				<div class="container">
+					<a href="apartamentoa.html" >
+					<img  alt="foto"  src="projetos/apartamentoa1.jpg"  class="tamanho-img">
+					
+					<div class="overlay">
+						<div class="text">Alphaville, SP</div>
+					</div>
+						</a>
+
+					</div>
+
+				<div class="container">
+						<a href="apartamentob.html" >
+							<div class="mobile">
+						<img  alt="foto"  src="projetos/apartamentob1.jpg" class="tamanho-img">
+							</div>
+					<div class="overlay">
+					<div class="text">Santana, SP</div>
+					</div>
+					</a>		
+					</div>
+				
+
+				<div class="container">
+					<a href="apartamentoc.html">
+					<img  alt="foto"  src="projetos/apartamentoc1.jpg" class="tamanho-img">
+					<div class="overlay">
+					<div class="text">Morumbi, SP</div>
+					</div>
+						</a>	
+				</div>
+
+			</div>
+
+			<div class="divisao-imagem">
+				<p class="texto-projetos">Casas</p>
+				<div class="container">
+					<a href="casaa.html" >
+					<img  alt="foto"  src="projetos/casaa1.jpg" class="tamanho-img">
+					<div class="overlay">
+					<div class="text">Campos do Jordão, SP</div>
+					</div>
+					</a>
+				</div>
+
+				<div class="container">
+					<a href="casab.html" >
+					<img  alt="foto"  src="projetos/casab1.jpg" class="tamanho-img">
+				   <div class="overlay">
+				   <div class="text">Copacabana, RJ</div>
+				   </div>
+					</a>
+				</div>
+
+					<div class="container">
+					<a href="casac.html" >
+					<img  alt="foto"  src="projetos/casac1.jpg" class="tamanho-img">
+					<div class="overlay">
+				    <div class="text">Ubatuba, SP</div>
+						</div>
+						</a>
+				</div>
+
+
+
+
+			</div>
+			<div class="divisao-imagem">
+				<p class="texto-projetos">Projetos 3D	</p>
+				
+				<div class="container">
+					<a href="3da.html">
+					<img  alt="foto"  src="projetos/3da1.jpg" class="tamanho-img">
+					<div class="overlay">
+				    <div class="text">Paulista, SP</div>
+					</div>
+					</a>
+				</div>
+
+				<div class="container">
+					<a href="3db.html">
+					<img  alt="foto"  src="projetos/3db1.jpg" class="tamanho-img">
+					<div class="overlay">
+				    <div class="text">New York, USA</div>
+					</div>
+					</a>	
+				</div>
+				<div class="container">
+					<a href="3dc.html">
+					<img  alt="foto"  src="projetos/3dc1.jpg" class="tamanho-img">	
+					<div class="overlay">
+				    <div class="text">Alberta - Canadá </div>
+					</div>
+					</a>
+				</div>
+			</div>
+		</main>
+        
+    <footer>
+	<aside class="bloco-rodape">
+        <div id="loguin"> <img src="img/logo3.png"> </div>
+		<div class="texto-rodape"> <p>Conceptarchitecture@gmail.com</p> <p>Desenvolvido por Minas Dev ©2019</p>
+        </div>
+        
+<!-- 	<p class="texto-rodape">Desenvolvido por Minas Dev ©2019</p> -->
+	</aside>
+		
+		</footer>
+       <script>
+	        /* SCRIPT JQUERY PARA TROCAR DE COR NAVBAR */
+	        $(window).scroll(function () {
+	            if ($(this).scrollTop()> 250) {
+	                $('.header').css  ("background-color", "rgba(0,0,0,0.6)")
+	            } else {
+	                $('.header').css ("background-color", "transparent")
+	            }
+	        });
+    	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Bem vindo ao meu mundo!</title>
+		<link rel="stylesheet" href="test.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	</head>
+<header class="header">
+  <a href="index.html" class="logo"><img src="logo3.png"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu" id="device">
+		<li><a href="index.html"class="a">Home</a></li>
+		<li><a href="sobre.html"class="a">Sobre nós</a></li>
+		<li><a href="projetos.html" class="a">Projetos</a></li>
+		<li><a href="agendamento.html"class="a">Agendamento</a></li>	  </ul>
+</header>
+<body>
+	<div>
+		<img src="opa.jpg">
+	         <script>
+	        /* SCRIPT JQUERY PARA TROCAR DE COR NAVBAR */
+	        $(window).scroll(function () {
+	            if ($(this).scrollTop()> 250) {
+	                $('.header').css ("background-color", "rgba(0,0,0,0.6)")
+	            } else {
+	                $('.header').css ("background-color", "transparent")
+	            }
+	        });
+    	</script>
+</body>
+</html>

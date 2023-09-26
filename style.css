@@ -1,0 +1,767 @@
+﻿/*ESSES CÓDIGOS IRÃO DEFINIR O:CABEÇALHO*/
+
+
+.a {
+  color: #fff;
+  background-color: rgba(0.0.0.0.8);
+  font-family: Quicksand, sans-serif;
+  font-size: 22px;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  transition: 0.8s;
+  display: fixed;
+}
+
+.header ul {
+  
+  padding: 0;
+  list-style: none;
+  overflow: hidden; 
+  padding-top: 15%;
+  z-index: 10;
+  }
+
+.header li a {
+  display: block;
+  padding: 30px 30px;
+  text-decoration: none;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+
+.header .logo {
+  float: left;
+   position: fixed;
+   margin-left: 3%;
+  max-width: 100%;
+  height: auto;
+
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .50s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 80px 50px 0 0;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 35px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .5s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 10px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -10px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/*CÓDIGO PARA P INICIO DO SLIDE*/
+* { margin: 0; padding: 0; top:0;}
+
+.load {animation:slide 2s;}
+
+.slider{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 19s infinite;    
+}
+
+.content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.principal {
+  left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing:5px; 
+    text-align: center;
+}
+
+@keyframes slide {
+    0%{
+       background-image: url(slide/opa.jpg);
+    }
+    
+    20%{
+        background-image: url(slide/opa.jpg);
+    }
+    
+    20.01%{
+       background-image: url(slide/cozinha3.jpg);
+    }
+    40%{
+       background-image: url(slide/cozinha3.jpg);
+    }
+    
+    40.01%{
+        background-image: url(slide/sala.jpg);
+    }
+    60%{
+       background-image: url(slide/sala.jpg);
+    }
+    
+    60.1%{
+        background-image: url(slide/quarto.jpg);
+    }
+    
+    80%{
+       background-image: url(slide/quarto.jpg);
+    }
+    
+    80.01%{
+        background-image: url(slide/piscina.jpg);
+    }
+    100%{
+        background-image:url(slide/piscina.jpg);
+    }
+}
+
+/*FIM DO SLIDE
+
+/*ESSES CÓDIGOS IRÃO DEFINIR O: CONTEÚDO DA PÁGINA*/
+
+main {
+	background-image: url("img/fundinhoshow.jpg");
+	background-attachment: fixed;
+    width: 100%;
+     object-fit: cover;
+}
+
+
+/*primeiro bloco do conteúdo, com imagem e texto.*/
+.primeiro-bloco {
+	/*display: flex; */
+	padding-top: 30px;
+  padding-bottom: 30px;
+	height: 30%;
+	width: 100%;
+	background: #000;
+
+}
+.primeira-imagem
+{
+    max-width:100%;
+    display:block;
+}
+
+ .img
+ {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.primeiro-texto {
+	/*display: flex;*/
+    margin-top: 7%;
+	color:#ccc;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    padding:4%;
+
+
+}
+/*FIM DO PRIMEIRO BLOCO*/
+
+/*INTERCESSÃO ENTRE OD DOIS BLOCOS DO CONTEÚDO COM TRANSPARENCIA E FRASE*/
+.bloco-bonito {
+	height: 150px;
+	width: 100%;
+	background-color:rgba(0,0,0,0.6);
+
+}
+
+.text-bloco {
+	text-align: center;
+	color:#fff;
+	font-family: 'Poppins', sans-serif;
+	font-size:25px;
+	display: inline-block;
+	text-align: center;
+    margin-top: 12%;
+}
+
+/*FIM DO BLOCO INTERCESSOR*/
+
+/*segundo bloco do conteúdo, com imagem e texto*/
+.segundo-bloco {
+	/*display: flex;*/
+	padding-top:30px;
+  padding-bottom: 30px; 
+  height: 30%;
+	width: 100%;
+	background: #000;
+}
+
+
+.segunda-imagem {
+    max-width:100%;
+    /*display:block;*/
+    margin-top: 7%;
+
+
+}
+
+.segundo-texto {
+  padding: 4%;
+	text-align: justify;
+  font-size:20px;
+	color:#ccc;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*FIM DO CONTEÚDO*/
+/*ESSES CÓDIGOS IRÃO DEFINIR O: RODAPÉ*/
+
+.bloco-rodape {
+	background:rgba(0,0,0,0.9);
+	width: 100%;
+    height: 200px;
+
+}
+
+.texto-rodape {
+	font-size: 20px;
+	color: white;
+	display: inline;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; 	
+}
+
+#loguin {
+    margin-bottom: 3px;
+    text-align: center;    
+}
+/*FIM DO RODAPÉ*/
+
+
+
+
+
+
+
+
+/*ESSES CÓDIGOS IRÃO DEFINIR O:CABEÇALHO*/
+
+
+
+.a {
+  color: #fff;
+  background-color: rgba(0.0.0.0.8);
+  font-family: Quicksand, sans-serif;
+  font-size: 22px;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  transition: 0.8s;
+  display: fixed;
+}
+
+.header ul {
+  
+  padding: 0;
+  list-style: none;
+  overflow: hidden; 
+  padding-top: 15%;
+  z-index: 10;
+  }
+
+.header li a {
+  display: block;
+  padding: 30px 30px;
+  text-decoration: none;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+
+.header .logo {
+  float: left;
+   position: fixed;
+   margin-left: 3%;
+  max-width: 100%;
+  height: auto;
+
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .50s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 80px 50px 0 0;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 35px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .5s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 10px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -10px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/*CÓDIGO PARA P INICIO DO SLIDE*/
+* { margin: 0; padding: 0; top:0;}
+
+.load {animation:slide 2s;}
+
+.slider{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 19s infinite;    
+}
+
+.content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.principal {
+  left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing:5px; 
+    text-align: center;
+}
+
+@keyframes slide {
+    0%{
+       background-image: url(slide/opa.jpg);
+    }
+    
+    20%{
+        background-image: url(slide/opa.jpg);
+    }
+    
+    20.01%{
+       background-image: url(slide/cozinha3.jpg);
+    }
+    40%{
+       background-image: url(slide/cozinha3.jpg);
+    }
+    
+    40.01%{
+        background-image: url(slide/sala.jpg);
+    }
+    60%{
+       background-image: url(slide/sala.jpg);
+    }
+    
+    60.1%{
+        background-image: url(slide/quarto.jpg);
+    }
+    
+    80%{
+       background-image: url(slide/quarto.jpg);
+    }
+    
+    80.01%{
+        background-image: url(slide/piscina.jpg);
+    }
+    100%{
+        background-image:url(slide/piscina.jpg);
+    }
+}
+
+/*FIM DO SLIDE
+
+/*ESSES CÓDIGOS IRÃO DEFINIR O: CONTEÚDO DA PÁGINA*/
+
+main {
+	background-image: url("img/fundinhoshow.jpg");
+	background-attachment: fixed;
+    width: 100%;
+     object-fit: cover;
+}
+
+
+/*primeiro bloco do conteúdo, com imagem e texto.*/
+.primeiro-bloco {
+	/*display: flex; */
+	padding-top: 30px;
+  padding-bottom: 30px;
+	height: 30%;
+	width: 100%;
+	background: #000;
+
+}
+.primeira-imagem
+{
+    max-width:100%;
+    display:block;
+}
+
+ .img
+ {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.primeiro-texto {
+	/*display: flex;*/
+    margin-top: 7%;
+	color:#ccc;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    padding:4%;
+
+
+}
+/*FIM DO PRIMEIRO BLOCO*/
+
+/*INTERCESSÃO ENTRE OD DOIS BLOCOS DO CONTEÚDO COM TRANSPARENCIA E FRASE*/
+.bloco-bonito {
+	height: 150px;
+	width: 100%;
+	background-color:rgba(0,0,0,0.6);
+
+}
+
+.text-bloco {
+	text-align: center;
+	color:#fff;
+	font-family: 'Poppins', sans-serif;
+	font-size:25px;
+	display: inline-block;
+	text-align: center;
+    margin-top: 12%;
+}
+
+/*FIM DO BLOCO INTERCESSOR*/
+
+/*segundo bloco do conteúdo, com imagem e texto*/
+.segundo-bloco {
+	/*display: flex;*/
+	padding-top:30px;
+  padding-bottom: 30px; 
+  height: 30%;
+	width: 100%;
+	background: #000;
+}
+
+
+.segunda-imagem {
+    max-width:100%;
+    /*display:block;*/
+    margin-top: 7%;
+
+
+}
+
+.segundo-texto {
+  padding: 4%;
+	text-align: justify;
+  font-size:20px;
+	color:#ccc;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*FIM DO CONTEÚDO*/
+/*ESSES CÓDIGOS IRÃO DEFINIR O: RODAPÉ*/
+
+.bloco-rodape {
+	background:rgba(0,0,0,0.9);
+	width: 100%;
+    height: 200px;
+
+}
+
+.texto-rodape {
+	font-size: 20px;
+	color: white;
+	display: inline;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; 	
+}
+
+#loguin {
+    margin-bottom: 3px;
+    text-align: center;    
+}
+/*FIM DO RODAPÉ*/
+
+
+
+
+
+
+
+
+
+
+/*DEFININDO A 1ºMEDIA QUERY*/
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+
+  .header ul{
+    padding-top: 0;
+    display: fixed;
+  }
+
+
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 50px 30px;
+    background-color: transparent;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+  .primeiro-bloco {
+    display: flex; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 400px;
+    width: 100%;
+    background: #000;
+}
+.img
+
+{
+/*    width: */
+    /*height:auto;*/
+    /*margin-left: 4%;*/
+}
+.primeira-imagem
+{
+  margin-left: 5%;
+}
+.primeiro-texto {
+    display: flex;
+    padding-top: 30px;
+    margin: 15px;
+    float: left;
+    height: 300px;
+    width: 600px;
+    color:#ccc;
+    font-size:25px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 5%;
+
+
+}
+.bloco-bonito {
+    height: 200px;
+    width: 100%;
+    background-color:rgba(0,0,0,0.6);
+
+}
+.text-bloco {
+    text-align: center;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    font-size:45px;
+    display: inline-block;
+    margin-left: 23%;
+    margin-top: 80px;
+}
+ 
+ /*segundo bloco do conteúdo, com imagem e texto*/
+.segundo-bloco {
+    display: flex;
+    padding-top:30px;
+    padding-bottom: 30px; 
+    height: 400px;
+    width: 100%;
+    background: #000;
+}
+
+
+.segunda-imagem {
+    margin-right: 5%;
+
+    margin-top: 1%;
+}
+
+.segundo-texto {
+     padding-top: 3%;
+    text-align: right;
+    margin-left:5%;
+    height: 333px;
+    width: 35%;
+    float: right;
+    color:#ccc;
+    font-size:25px;
+    font-family: 'Quicksand', sans-serif;
+    /*text-align: justify;*/
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

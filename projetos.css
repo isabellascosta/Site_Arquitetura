@@ -1,0 +1,405 @@
+
+
+* { margin: 0;
+ padding: 0;
+  top:0; 
+  font-family:'Quicksand', sans-serif; }
+
+/*codigos do cabeçalho*/
+
+.a {
+  color: #fff;
+  background-color: rgba(0.0.0.0.8);
+  font-family: Quicksand, sans-serif;
+  font-size: 22px;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  transition: 0.8s;
+  display: fixed;
+  z-index: 20;
+}
+
+.header ul {
+  
+  padding: 0;
+  list-style: none;
+  overflow: hidden; 
+  padding-top: 15%;
+  z-index: 10;
+  }
+
+.header li a {
+  display: block;
+  padding: 30px 30px;
+  text-decoration: none;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+
+.header .logo {
+  float: left;
+   position: fixed;
+   margin-left: 3%;
+  max-width: 100%;
+  height: auto;
+
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .50s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 80px 50px 0 0;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 35px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .5s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 10px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -10px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/*fim do cabeçalbho*/
+
+/*inicio do slide*/
+
+.load {animation:slide 2s;}
+
+.slider{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 19s infinite;    
+}
+
+.content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.principal {
+  left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing:5px; 
+    text-align: center;
+}
+
+@keyframes slide {
+    0%{
+       background-image: url(slide/opa.jpg);
+    }
+    
+    20%{
+        background-image: url(slide/opa.jpg);
+    }
+    
+    20.01%{
+       background-image: url(slide/cozinha3.jpg);
+    }
+    40%{
+       background-image: url(slide/cozinha3.jpg);
+    }
+    
+    40.01%{
+        background-image: url(slide/sala.jpg);
+    }
+    60%{
+       background-image: url(slide/sala.jpg);
+    }
+    
+    60.1%{
+        background-image: url(slide/quarto.jpg);
+    }
+    
+    80%{
+       background-image: url(slide/quarto.jpg);
+    }
+    
+    80.01%{
+        background-image: url(slide/piscina.jpg);
+    }
+    100%{
+        background-image:url(slide/piscina.jpg);
+    }
+}
+
+/*fim do slide*/
+
+.bloco-cor
+{
+  background: #000;
+  height:700px;
+  width: 100%;
+}
+
+.divisao-imagem
+{
+background: #000;
+display: inline-block;
+width: 100%;
+text-align: center;
+
+}
+.texto-projetos
+{
+    font-size: 25px;
+    color:#fff;
+    padding: 10px;
+}
+.tamanho-img
+{
+    max-width: 80%;
+    height: 300px;
+    /*width:300px;*/
+    object-fit: cover;
+    /*margin:5px;*/
+}
+
+.container {
+  position: relative;
+  width: 310px;
+  margin:10px;
+  display: inline-block;
+
+  }
+.overlay {
+  display: inline;
+  position: fixed;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+   background-color: rgba(0,0,0,0.6);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+    /display: inline;*/
+}
+
+
+.bloco-rodape {
+	background:rgba(0,0,0,.9);
+	width: 100%;
+    height: 200px;
+
+}
+
+.texto-rodape {
+	font-size: 15px;
+	color: white;
+	display: inline;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; 	
+}
+
+#loguin {
+    margin-bottom: 3px;
+    text-align: center;  
+  }
+
+
+
+@media (min-width: 48em) {
+
+  .header ul{
+    padding-top: 0;
+    display: fixed;
+    z-index: 10;
+  }
+
+
+  .header li {
+    float: left;
+     z-index: 10;
+  }
+  .header li a {
+    padding: 50px 30px;
+    background-color: transparent;
+     z-index: 10;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+     z-index: 10;
+  }
+  .header .menu-icon {
+    display: none;
+     z-index: 10;
+  }
+
+
+.bloco-cor
+{
+  background: #000;
+  height:700px;
+  width: 100%;
+}
+.divisao-imagem
+{
+background: #000;
+display: inline-block;
+width: 100%;
+text-align: center;
+
+}
+.texto-projetos
+{
+    font-size: 25px;
+    color:#fff;
+    padding: 10px;
+}
+.tamanho-img
+{
+    max-width: 100%;
+    height: 400px;
+    width:300px;
+    object-fit: cover;
+    margin:5px;
+}
+
+.container {
+  position: relative;
+  width: 310px;
+  margin:10px;
+  display: inline-block;
+
+  }
+.overlay {
+  display: inline;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+/*    display: inline;*/
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+    /display: inline;*/
+}
+
+
+.bloco-rodape {
+  background:rgba(0,0,0,.9);
+  width: 100%;
+    height: 200px;
+
+}
+
+.texto-rodape {
+  font-size: 20px;
+  color: white;
+  display: inline;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;   
+}
+
+

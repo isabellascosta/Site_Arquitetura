@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Bem vindo ao meu mundo!</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="=ie-edge">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	</head>
+
+
+	<body>
+				<!-- Inicio do menu fixo -->
+		<header  class = "header">
+  			<a href="index.html" class="logo"><img src="img/logo3.png" ></a>
+			  <input class="menu-btn" type="checkbox" id="menu-btn" />
+			  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			  <ul class="menu" id="device">
+					<li><a href="index.html"class="a">Home</a></li>
+					<li><a href="sobre.html"class="a">Sobre nós</a></li>
+					<li><a href="projetos.html" class="a">Projetos</a></li>
+					<li><a href="agendamento.php"class="a">Agendamento</a></li>	  </ul>
+		</header>
+			<!-- Fim do menu fixo -->
+
+              <!--ESPAÇO PARA O SLIDE-->
+		<div class="slider">
+            <div class="load"></div>
+           		 <div class= content>
+           			 <div class="principal">
+        
+        			</div>
+   				 </div>
+			</div>
+		</div>
+            <!--FIM DO SLIDE -->
+		</header>
+		<!-- Inicio conteudo principal -->
+		<main class="bloco-principal">
+			<!-- Primeiro  bloco, com uma imagem e um texto -->
+			<div class="primeiro-bloco">
+				<div class="primeira-imagem">
+					<img src="img/bloco_imagem.jpg" class="img">
+				</div>
+				<div class="primeiro-texto">
+					<p> A ordem é não desperdiçar espaço em nenhum dos cômodos da casa. Aproveitar cada centímetro do novo lar, mas é na cozinha que acontece os mais deliciosos encontros em família.
+					A decoração é minuciosa e cada cantinho deve ser ocupado com um detalhe exclusivo, único e que, ainda, facilite o dia-a-da. 
+					</p>
+				</div>	
+		    </div>
+		    <!-- Fim do primeiro bloco -->
+
+
+            <!-- Bloco com esmaecimento preto, imagem de fundo,decorativo -->
+		    <div class="bloco-bonito">
+		    	<p class="text-bloco">Nossa Transparência, sua confiança!</p>
+		    </div>
+		    <!-- Fim de bloco esmaecido -->
+
+
+            <!-- Segundo bloco, com um texto e uma imagem -->
+			<div class="segundo-bloco">
+					<div class="segundo-texto">
+						<p>  A ordem é não desperdiçar espaço em nenhum dos cômodos da casa. Aproveitar cada centímetro do novo lar, mas é na cozinha que acontece os mais deliciosos encontros em família.
+						A decoração é minuciosa e cada cantinho deve ser ocupado com um detalhe exclusivo, único e que, ainda, facilite o dia-a-da. </p>	
+					</div>
+					<div class="segunda-imagem">
+						<img src="img/quartop.jpg" class="img">
+					</div>
+
+			    </div>		
+			<!-- Fim do segundo bloco -->
+		</main>
+        
+			<!-- Comeco do  footer -->
+		<footer>
+			<aside class="bloco-rodape">
+      	   	    <div id="loguin"> <img src="img/logo3.png"> </div>
+				<div class="texto-rodape"> <p>Conceptarchitecture@gmail.com</p> <p>Desenvolvido por Minas Dev ©2019</p>
+        		</div>
+			</aside>
+		
+		</footer>
+
+		
+         <script>
+	        /* SCRIPT JQUERY PARA TROCAR DE COR NAVBAR */
+	        $(window).scroll(function () {
+	            if ($(this).scrollTop()> 250) {
+	                $('.header').css  ("background-color", "rgba(0,0,0,0.6)")
+	            } else {
+	                $('.header').css ("background-color", "transparent")
+	            }
+	        });
+    	</script>
+
+    </body>	
+</html>
+
+

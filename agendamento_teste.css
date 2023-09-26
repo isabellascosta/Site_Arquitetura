@@ -1,0 +1,556 @@
+﻿/*ESSES CÓDIGOS IRÃO DEFINIR O:CABEÇALHO*/
+
+.a {
+  color: #fff;
+  background-color: rgba(0.0.0.0.8);
+  font-family: Quicksand, sans-serif;
+  font-size: 22px;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  transition: 0.8s;
+  display: fixed;
+}
+
+.header ul {
+  
+  padding: 0;
+  list-style: none;
+  overflow: hidden; 
+  padding-top: 15%;
+  z-index: 10;
+  }
+
+.header li a {
+  display: block;
+  padding: 30px 30px;
+  text-decoration: none;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+
+.header .logo {
+  float: left;
+   position: fixed;
+   margin-left: 3%;
+  max-width: 100%;
+  height: auto;
+
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .50s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 80px 50px 0 0;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 35px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .5s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 10px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -10px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;}
+/*CÓDIGO PARA P INICIO DO SLIDE*/
+* { margin: 0; padding: 0; top:0;}
+
+.load {animation:slide 2s;}
+
+.slider{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 19s infinite;    
+}
+
+.content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.principal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing:5px; 
+    text-align: center;
+}
+
+
+/*ESSE CÓGIDOS IRÃO DEFINIR O SLIDE*/
+* { margin: 0; padding: 0; top:0;}
+
+.load {animation:slide 2s;}
+
+.slider{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 19s infinite;    
+}
+
+.content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.principal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing:5px; 
+    text-align: center;
+}
+
+@keyframes slide {
+    0%{
+       background-image: url(slide/opa.jpg);
+    }
+    
+    20%{
+        background-image: url(slide/opa.jpg);
+    }
+    
+    20.01%{
+       background-image: url(slide/cozinha3.jpg);
+    }
+    40%{
+       background-image: url(slide/cozinha3.jpg);
+    }
+    
+    40.01%{
+        background-image: url(slide/sala.jpg);
+    }
+    60%{
+       background-image: url(slide/sala.jpg);
+    }
+    
+    60.1%{
+        background-image: url(slide/quarto.jpg);
+    }
+    
+    80%{
+       background-image: url(slide/quarto.jpg);
+    }
+    
+    80.01%{
+        background-image: url(slide/piscina.jpg);
+    }
+    100%{
+        background-image:url(slide/piscina.jpg);
+    }
+}
+
+/*FIM DO SLIDE*/
+
+/*FORMULARIO*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+main{
+  background-color: black;
+  background-size: cover;
+  height: 200vh;
+}
+
+.wrapper{
+  position: absolute;
+  top: 160%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  box-shadow: 0 0 px rgba(0,0,0,0.3);
+ font-family: Quicksand, sans-serif;
+}
+
+.wrapper .title h1{
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: Quicksand, sans-serif;
+}
+
+.contact-form{
+  display: flex;
+ font-family: Quicksand, sans-serif;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+    font-family: Quicksand, sans-serif;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+    font-family: Quicksand, sans-serif;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: white;
+  width: 100%;
+    font-family: Quicksand, sans-serif;
+}
+
+.msg textarea{
+  height: 212px;
+    font-family: Quicksand, sans-serif;
+}
+
+::-webkit-in put-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+
+.btn {
+    background: White;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Quicksand, sans-serif;
+}
+.mapa {
+    position: absolute;
+    top: 60%;
+}
+.contato {
+    color: #ccc;
+    font-size: 20px;
+    font-family: Quicksand, sans-serif;
+    position: absolute;
+    left: 110%;
+    top:150%;
+    line-height:40px
+        
+}
+
+.localtxt {
+    color: #ccc;
+    font-family: Quicksand, sans-serif;
+    position: absolute;
+    left: 85%;
+    top: 125%;
+
+}
+.local {
+    position: absolute;
+    margin-top: 100%;
+    margin-left: 20%;
+}
+/*IMAGEM DOIDA IGUAL A ISA*/
+
+#imagem {
+        position: absolute;
+        left:50%;
+        top: 90%;
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+        
+       
+    }
+
+    .placeholder{
+      display:inline-block;
+      position:relative;
+      width:600px;
+      height:600px;
+      overflow:hidden;
+      box-sizing:border-box;
+      margin-top:100px;
+    }
+
+    .placeholder:hover .gridTile {
+      background-position: 0px 0px !important;
+    }
+
+    .gridContainer{
+      width:100%;
+      height:100%; 
+    }
+
+    .gridTile
+    {   
+                            
+      background-image: url(img/lumineition.jpg);
+      position:absolute;
+      top:0px;
+      left:0px;
+      width:100%;
+      height:100%;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-origin:center;
+      transition: background-position .3s cubic-bezier(0.76, 1.52, 0.58, 1);
+    }
+
+/*CÓDIGOS QUE DEFINEM RODAPÉ*/
+.bloco-rodape {
+	background:rgba(0,0,0,0.9);
+	width: 100%;
+    height: 200px;
+
+}
+
+.texto-rodape {
+	font-size: 20px;
+	color: white;
+	display: inline;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; 	
+}
+
+#loguin {
+    margin-bottom: 3px;
+    text-align: center;    
+}
+
+/*media query*/
+@media (min-width: 48em){
+    
+    main {
+        height: 300vh;
+        
+    }
+    
+    .wrapper{
+  position: absolute;
+  top: 150%;
+  left: 50%;}
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+ /*IMAGEM DOIDA IGUAL A ISA*/
+
+ #imagem {
+
+    top: 180%;
+    left:10%;
+    max-width:150px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+
+    }
+
+   .placeholder{
+      display:inline-block;
+      position:relative;
+      width:400px;
+      height:400px;
+      overflow:hidden;
+      box-sizing:border-box;
+      margin-top:100px;
+    }
+    
+  .contato {
+    left:110px;
+    top:220%;
+    line-height:40px
+        
+  }
+ .localtxt {
+   left: 150px;
+   top: 205%;
+
+  }
+  .local {
+    
+    top: 170%;
+    left:-60px;
+    height: 100px;
+    width: 100px;
+  }
+}
+   
+
+
+/* @media screen and (max-width: 360px){
+
+    
+.slider{ 
+    
+    width: 490px;
+    height: 100vh;  
+}
+
+    
+main {
+        height: 300vh;
+        width: 490px;
+    }
+    
+    .wrapper{
+  position: absolute;
+  top: 150%;
+  left: 65%;}
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+/*IMAGEM DOIDA IGUAL A ISA*/
+/* 
+#imagem {
+
+    top: 180%;
+    left:10%;
+    max-width:100px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+
+    }
+
+   .placeholder{
+      display:inline-block;
+      position:relative;
+      width:400px;
+      height:400px;
+      overflow:hidden;
+      box-sizing:border-box;
+      margin-top:100px;
+    }
+    
+  .contato {
+    left:50px;
+    top:210%;
+    line-height:40px
+        
+}
+.localtxt {
+   left: 60px;
+   top: 200%;
+
+}
+.local {
+    
+    top: 200%;
+   
+    
+}
+    .bloco-rodape {
+
+	width: 490px;;
+    height: 200px;
+
+}
+
+ */ 
+   

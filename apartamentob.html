@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+      <title> Apartamentos</title>
+      <link rel="stylesheet" href="style-projetos.css">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-compatible" content="=ie-edge">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <!-- Inicio do menu fixo -->
+    <header  class = "header">
+        <a href="index.html" class="logo"><img src="img/logo3.png" ></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu" id="device">
+          <li><a href="index.html"class="a">Home</a></li>
+          <li><a href="sobre.html"class="a">Sobre nós</a></li>
+          <li><a href="projetos.html" class="a">Projetos</a></li>
+          <li><a href="agendamento.php"class="a">Agendamento</a></li>    </ul>
+    </header>
+      <!-- Fim do menu fixo -->
+
+      <!-- corpo principal do projeto  com a cor branca de fundo -->
+    <main class="bloco-cor"> 
+
+      <div class="bloco-slide">
+      <div class="container">
+          
+    	   <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="projetos/apartamentob1.jpg" class="img" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="projetos/apartamentob2.jpg" class="img" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="projetos/apartamentob3.jpg" class="img" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="projetos/apartamentob4.jpg"  class="img" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="projetos/apartamentob5.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="projetos/casab7.jpg" style="width:100%">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="projetos/apartamentob1.jpg" style="width:100%" onclick="currentSlide(1)" alt="&nbsp">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projetos/apartamentob2.jpg" style="width:100%" onclick="currentSlide(2)" alt="&nbsp">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projetos/apartamentob3.jpg" style="width:100%" onclick="currentSlide(3)" alt="&nbsp">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projetos/apartamentob4.jpg" style="width:100%" onclick="currentSlide(4)" alt="&nbsp">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projetos/apartamentob5.jpg" style="width:100%" onclick="currentSlide(5)" alt="&nbsp">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="projetos/casab7.jpg" style="width:100%" onclick="currentSlide(6)" alt="&nbsp">
+          </div>
+        </div>
+      </div>
+    	</div>
+
+   
+  <div class="bloco-texto">
+    <div  class="local"><h2>Santana - São Paulo</h2></div> 
+    <p class="text"><strong>Tipo:</strong> Apartamento<br></p>
+      <!-- <p> &nbsp</p> -->
+    <p class="text"><strong>Escritório:</strong class="text"> Fernanda Marques Arquitetos Associados<br></p>
+    <!-- <p> &nbsp</p> -->
+       <p class="text"> <strong >Nome do projeto:</strong> Oskar<br></p>
+        <!-- <p> &nbsp</p> -->
+        <p class="text"><strong class="text">Data do início do projeto:</strong> 2016<br></p>
+        <!-- <p> &nbsp</p> -->
+        <p class="text"><strong class="text">Data de conclusão do projeto:</strong> 2017<br></p>
+        <!-- <p> &nbsp</p> -->
+        <p class="text"><strong class="text">Localização:</strong>Alphaville - São Paulo <br></p>
+        <!-- <p> &nbsp</p> -->
+        <p class="text"><strong class="text">Área:</strong> 400m²<br></p>
+        <!-- <p> &nbsp</p> -->
+        <p class="text"><strong>Fotógrafo:</strong> Fernando Guerra<br></p>
+        <p id="planta"><strong>Planta do Projeto:</strong><p>
+   </p>  
+  </div>
+
+    <div class="planta">
+      
+    	<a href="http://www.funasa.gov.br/documents/20182/35949/Modelo-de-Projeto-basico-de-habitacao-de-2-quartos-planta-baixa.pdf/3b45038f-0944-4cee-ab72-c5cc6b272dd6"target="_blank" >
+    	<img  alt="foto"  src="projetos/planta.jpg" class="tamanho-pdf">
+    	</a>
+    </div>
+    	   
+		<!--Redes sociais-->
+		<p class="contato-texto"><strong>Entre em contato conosco</strong></p>
+    <p> &nbsp</p>
+  <div class="contato">
+  	<ul class="ul-teste">
+  		<li class="li-teste">
+  			<a href="https://www.facebook.com/Concept-Architecture-100189861485831/?modal=admin_todo_tour" target="_blank" class="a-teste">
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  				<i class="fa fa-facebook" aria-hidden="true" ></i>
+  			</a>
+  		</li>
+  		<li class="li-teste">
+  			<a href="https://instagram.com/c.archicteture?igshid=qmwmbmncyirm" target="_blank" class="a-teste">
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  					<i class="fa fa-instagram" aria-hidden="true" ></i>
+  			</a>
+  		</li>
+  		<li class="li-teste">
+  			<a href="#" class="a-teste">
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  				<i class="fa fa-whatsapp" aria-hidden="true" ></i>
+  			</a>	
+  		</li>
+  				<li  class="li-teste">
+  			<a href="#" class="a-teste">
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  				<i class="fa fa-pinterest" aria-hidden="true"></i>
+  			</a>	
+  		</li>
+  	</ul>
+  </div>
+    	<footer>
+      	<aside class="bloco-rodape">
+          <div id="loguin"> <img src="img/logo3.png"> </div>
+      		<div class="texto-rodape"> <p>Conceptarchitecture@gmail.com</p> <p>Desenvolvido por Minas Dev ©2019</p>
+          </div>
+      	</aside>
+    	</footer>
+    	
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+    </div>
+    </div>	
+  </main>
+  </body>
+</html>

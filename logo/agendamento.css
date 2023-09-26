@@ -1,0 +1,60 @@
+.bloco-esmaecido
+{
+	width: 1500px;
+	padding: 20px 800px 100px 700px;
+	background:rgba(0,0,0,0.5);
+	position: fixed;
+/*	top:0;*/
+}
+
+.menu
+{
+	background-image: url("agendamento_menu.jpg");
+	background-attachment: fixed;
+	height: 300px;
+	width: 100%;
+}
+nav
+{
+	position: fixed;
+	top:40px;
+}
+
+nav li
+{
+	display: inline;
+    margin: 0 0 0 15px;
+}
+/*formatação do texto*/
+nav a 
+{
+	font-family: 'Quicksand', sans-serif; 	
+	text-transform: uppercase;
+	color:#fff;
+	font-weight: bold;
+	font-size:22px;
+	text-decoration: none;
+
+}
+
+#contact {font-size: 25px;}
+
+/*Localização e formularios*/
+#nome, #email, #telefone, #assunto {
+    width: 20%;
+    height: 25px;
+    border: solid 1px;
+    
+}
+
+#mensagem {
+    width:20%; 
+    height: 80px;
+    border: solid 1px;
+}
+
+
+/*Regra para o mapa contido em #localização*/
+#localizacao iframe { width: 50%;}
+
+#localizacao {margin-top: 25px;}
